@@ -198,6 +198,72 @@ target="_blank">
 </footer>
 
 <script>
+  
+<section id="reviews">
+<h2>⭐ آراء زبنائنا</h2>
+<p>رأيكم يهمنا، ساعدونا على تحسين خدماتنا</p>
+
+<div class="card">
+<label for="rating">التقييم ديالكم:</label>
+
+<div id="stars" style="font-size:32px;color:#D4AF37;margin:15px">
+  <span onclick="chooseRating(1)">★</span>
+  <span onclick="chooseRating(2)">★</span>
+  <span onclick="chooseRating(3)">★</span>
+  <span onclick="chooseRating(4)">★</span>
+  <span onclick="chooseRating(5)">★</span>
+</div>
+
+<input id="reviewName" type="text"
+placeholder="الاسم (اختياري)"
+style="padding:12px;width:100%;margin:8px 0">
+
+<textarea id="reviewText"
+placeholder="اكتب رأيك في مقهى بريستجيا..."
+style="padding:12px;width:100%;height:100px;margin:8px 0">
+</textarea>
+
+<button onclick="sendReview()"
+style="background:#D4AF37;padding:13px 22px;border:0;border-radius:10px;font-weight:bold">
+إرسال التقييم ⭐
+</button>
+</div>
+</section>
+
+<script>
+let selectedRating = 5;
+
+function chooseRating(n) {
+  selectedRating = n;
+  document.querySelectorAll("#stars span").forEach((star, i) => {
+    star.style.opacity = i < n ? "1" : "0.35";
+  });
+}
+
+chooseRating(5);
+
+function sendReview() {
+  const name = document.getElementById("reviewName").value.trim();
+  const review = document.getElementById("reviewText").value.trim();
+
+  if (!review) {
+    alert("المرجو كتابة تعليقكم أولاً");
+    return;
+  }
+
+  const message =
+    "تقييم جديد لمقهى بريستجيا ☕%0A" +
+    "الاسم: " + encodeURIComponent(name || "زبون") + "%0A" +
+    "التقييم: " + selectedRating + "/5 ⭐%0A" +
+    "التعليق: " + encodeURIComponent(review);
+
+  window.open(
+    "https://wa.me/212679862203?text=" + message,
+    "_blank"
+  );
+}
+</script>
+
 function setLang(lang) {
 
 const t = {
