@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -6,43 +8,102 @@
 <title>مقهى بريستجيا | Café Prestigia</title>
 
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#181818;color:white}
-header{background:#111;padding:15px;text-align:center}
-header h1{color:#e6b83f;font-size:30px}
-nav button{background:#e6b83f;border:0;padding:10px 15px;margin:4px;border-radius:8px;cursor:pointer}
-.hero{padding:50px 20px;text-align:center;
-.hero h2{font-size:35px;color:#f5ca54}
-.hero
-  padding: 50px 20px;
-  text-align: center;
-  min-height: 550px;
-  display: flex;
-align-items: center;
-justify-content: center;
-  background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url("facade[1].png") center/cover no-repeat;
-}
-section{padding:30px 15px;text-align:center}
-h2{color:#e6b83f}
-.gallery{display:flex;flex-wrap:wrap;justify-content:center;gap:15px}
-.gallery img{width:300px;max-width:100%;height:250px;object-fit:cover;border-radius:12px}
-.card{background:#292929;padding:20px;border-radius:12px;margin:10px auto;max-width:600px}
-.whatsapp {
-  display: inline-block;
-  background-color: #25D366;
-  color: #ffffff !important;
-  padding: 15px 25px;
-  border-radius: 30px;
-  text-decoration: none !important;
-  font-weight: bold;
-  font-size: 18px;
+* {
+  box-sizing: border-box;
 }
 
-footer{background:#111;padding:20px;text-align:center;color:#ccc}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #181818;
+  color: white;
+}
+
+header {
+  background: #111;
+  padding: 15px;
+  text-align: center;
+}
+
+header h1 {
+  color: #e6b83f;
+  font-size: 30px;
+}
+
+nav button {
+  background: #e6b83f;
+  border: 0;
+  padding: 10px 15px;
+  margin: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 550px;
+  padding: 50px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
+    url("facade[1].png") center/cover no-repeat;
+}
+
+.hero h2 {
+  font-size: 35px;
+  color: #f5ca54;
+}
+
+section {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+h2 {
+  color: #e6b83f;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery img {
+  width: 300px;
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card {
+  background: #292929;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.whatsapp {
+  display: inline-block;
+  background: #25D366;
+  color: white !important;
+  padding: 15px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px;
+}
 
 .map-button {
   display: inline-block;
-  background:#D4AF37;
+  background: #D4AF37;
   color: white;
   padding: 14px 24px;
   border-radius: 12px;
@@ -51,22 +112,20 @@ footer{background:#111;padding:20px;text-align:center;color:#ccc}
   margin: 10px;
 }
 
+footer {
+  background: #111;
+  padding: 20px;
+  text-align: center;
+  color: #ccc;
+}
 </style>
-</head>
-  <body>
-    </style>
 </head>
 
 <body>
 
-<a href="https://maps.app.goo.gl/WfCuPKxeUF6DAFU17"
-   target="_blank"
-   class="map-button">
-   📍 موقعنا على الخريطة
-</a>
-
 <header>
 <h1>☕ Café Prestigia | مقهى بريستجيا</h1>
+
 <nav>
 <button onclick="setLang('ar')">العربية</button>
 <button onclick="setLang('fr')">Français</button>
@@ -76,15 +135,18 @@ footer{background:#111;padding:20px;text-align:center;color:#ccc}
 
 <div class="hero">
 <h2 id="welcome">مرحبا بكم في مقهى بريستجيا</h2>
-<p id="description">مكانكم المفضل للقهوة والاسترخاء ومتابعة أقوى المباريات</p>
+<p id="description">
+مكانكم المفضل للقهوة والاسترخاء ومتابعة أقوى المباريات
+</p>
 </div>
- <section>
+
+<section>
 <h2>معلومات المقهى</h2>
 <p>📍 العنوان: حي الزهراء – شيشاوة</p>
-
 <p>🕒 ساعات العمل: يومياً من 07:00 صباحاً إلى 23:00 ليلاً</p>
- </section>
-  <section>
+</section>
+
+<section>
 <h2 id="aboutTitle">عن مقهى بريستجيا</h2>
 <div class="card">
 <p id="aboutText">
@@ -94,6 +156,9 @@ footer{background:#111;padding:20px;text-align:center;color:#ccc}
 </div>
 </section>
 
+<section>
+<h2 id="galleryTitle">صور المقهى</h2>
+<div class="gallery">
 <img src="facade[1].png" alt="واجهة مقهى بريستجيا">
 <img src="interior-1[1].jpg" alt="داخل المقهى">
 <img src="interior-2[1].jpg" alt="أجواء المقهى">
@@ -104,21 +169,17 @@ footer{background:#111;padding:20px;text-align:center;color:#ccc}
 <section>
 <h2 id="locationTitle">موقعنا</h2>
 <p id="locationText">حي الزهراء – شيشاوة – المغرب 🇲🇦</p>
-</section><a href="https://maps.app.goo.gl/WfCuPKxeUF6DAFU17"
-   target="_blank"
-   class="map-button">
-   📍 موقعنا على الخريطة
-</a>
+</section>
 
 <section>
 <h2 id="contactTitle">تواصل معنا</h2>
-<p id="contactText">للتواصل والاستفسار عبر واتساب</p>
-</section>
-  <section>
-<h2 id="contactTitle">تواصل معنا</h2>
+<p id="contactText">
+يسعدنا استقبال رسائلكم واستفساراتكم
+</p>
 
-<p id="contactText">يسعدنا استقبال رسائلكم واستفساراتكم</p>
-<a class="whatsapp" href="https://wa.me/212679862203" target="_blank">
+<a class="whatsapp"
+href="https://wa.me/212679862203"
+target="_blank">
 WhatsApp 📱 0679862203
 </a>
 
@@ -127,10 +188,9 @@ WhatsApp 📱 0679862203
 <a class="map-button"
 href="https://maps.app.goo.gl/WfCuPKxeUF6DAFU17"
 target="_blank">
-📍 موقعنا على الخريطة
+📍 <span id="mapButtonText">موقعنا على الخريطة</span>
 </a>
-
-  </section>
+</section>
 
 <footer>
 <p>© Café Prestigia – Chichaoua</p>
@@ -138,54 +198,68 @@ target="_blank">
 </footer>
 
 <script>
-function setLang(lang){
-const t={
-ar:{
-welcome:"مرحبا بكم في مقهى بريستجيا",
-description:"مكانكم المفضل للقهوة والاسترخاء ومتابعة أقوى المباريات",
-aboutTitle:"عن مقهى بريستجيا",
-aboutText:"مقهى بريستجيا، فضاء مريح وأجواء جميلة في حي الزهراء بمدينة شيشاوة. نرحب بزبنائنا الأوفياء للاستمتاع بالقهوة والمشروبات ومتابعة المباريات.",
-galleryTitle:"صور المقهى",
-locationTitle:"موقعنا",
-locationText:"حي الزهراء – شيشاوة – المغرب 🇲🇦",
-contactTitle:"تواصل معنا",
-contactText:"للتواصل والاستفسار عبر واتساب",
-footerText:"مرحبا بكم دائماً ❤️☕",
-dir:"rtl"
+function setLang(lang) {
+
+const t = {
+
+ar: {
+welcome: "مرحبا بكم في مقهى بريستجيا",
+description: "مكانكم المفضل للقهوة والاسترخاء ومتابعة أقوى المباريات",
+aboutTitle: "عن مقهى بريستجيا",
+aboutText: "مقهى بريستجيا، فضاء مريح وأجواء جميلة في حي الزهراء بمدينة شيشاوة. نرحب بزبنائنا الأوفياء للاستمتاع بالقهوة والمشروبات ومتابعة المباريات.",
+galleryTitle: "صور المقهى",
+locationTitle: "موقعنا",
+locationText: "حي الزهراء – شيشاوة – المغرب 🇲🇦",
+contactTitle: "تواصل معنا",
+contactText: "يسعدنا استقبال رسائلكم واستفساراتكم",
+mapButtonText: "موقعنا على الخريطة",
+footerText: "مرحبا بكم دائماً ❤️☕",
+dir: "rtl"
 },
-fr:{
-welcome:"Bienvenue au Café Prestigia",
-description:"Votre endroit préféré pour le café, la détente et les grands matchs",
-aboutTitle:"À propos de nous",
-aboutText:"Café Prestigia vous accueille dans une ambiance agréable au quartier Al Zahra à Chichaoua. Venez profiter de nos cafés, boissons et matchs.",
-galleryTitle:"Photos du café",
-locationTitle:"Notre adresse",
-locationText:"Quartier Al Zahra – Chichaoua – Maroc 🇲🇦",
-contactTitle:"Contactez-nous",
-contactText:"Contact et renseignements via WhatsApp",
-footerText:"Bienvenue à tout moment ❤️☕",
-dir:"ltr"
+
+fr: {
+welcome: "Bienvenue au Café Prestigia",
+description: "Votre endroit préféré pour le café, la détente et les grands matchs",
+aboutTitle: "À propos de nous",
+aboutText: "Café Prestigia vous accueille dans une ambiance agréable au quartier Al Zahra à Chichaoua. Venez profiter de nos cafés, boissons et matchs.",
+galleryTitle: "Photos du café",
+locationTitle: "Notre adresse",
+locationText: "Quartier Al Zahra – Chichaoua – Maroc 🇲🇦",
+contactTitle: "Contactez-nous",
+contactText: "Nous serons heureux de recevoir vos messages et demandes.",
+mapButtonText: "Notre emplacement sur la carte",
+footerText: "Bienvenue à tout moment ❤️☕",
+dir: "ltr"
 },
-en:{
-welcome:"Welcome to Café Prestigia",
-description:"Your favorite place for coffee, relaxation and watching big matches",
-aboutTitle:"About Us",
-aboutText:"Café Prestigia welcomes you to a relaxing atmosphere in Al Zahra, Chichaoua. Enjoy coffee, drinks and live football matches.",
-galleryTitle:"Café Photos",
-locationTitle:"Our Location",
-locationText:"Al Zahra – Chichaoua – Morocco 🇲🇦",
-contactTitle:"Contact Us",
-contactText:"Contact us via WhatsApp",
-footerText:"You're always welcome ❤️☕",
-dir:"ltr"
+
+en: {
+welcome: "Welcome to Café Prestigia",
+description: "Your favorite place for coffee, relaxation and watching big matches",
+aboutTitle: "About Us",
+aboutText: "Café Prestigia welcomes you to a relaxing atmosphere in Al Zahra, Chichaoua. Enjoy coffee, drinks and live football matches.",
+galleryTitle: "Café Photos",
+locationTitle: "Our Location",
+locationText: "Al Zahra – Chichaoua – Morocco 🇲🇦",
+contactTitle: "Contact Us",
+contactText: "We are happy to receive your messages and inquiries.",
+mapButtonText: "Find us on the map",
+footerText: "You're always welcome ❤️☕",
+dir: "ltr"
 }
+
 };
-let x=t[lang];
-document.documentElement.lang=lang;
-document.documentElement.dir=x.dir;
-for(let id in x){
-if(id!=="dir")document.getElementById(id).innerText=x[id];
+
+let x = t[lang];
+
+document.documentElement.lang = lang;
+document.documentElement.dir = x.dir;
+
+for (let id in x) {
+  if (id !== "dir") {
+    document.getElementById(id).innerText = x[id];
+  }
 }
+
 }
 </script>
 
